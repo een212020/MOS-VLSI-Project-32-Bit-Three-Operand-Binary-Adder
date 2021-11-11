@@ -1,0 +1,1035 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 19.12-s121_1, built Tue Dec 03 01:37:17 PST 2019
+Options: -legacy_ui 
+Date:    Thu Nov 11 23:31:17 2021
+Host:    bessel1 (x86_64 w/Linux 4.9.0-6-amd64) (1core*16cpus*1physical cpu*Intel(R) Xeon(R) CPU X5650 @ 2.67GHz 12288KB) (39877680KB)
+PID:     12062
+OS:      Unsupported OS as /etc does not have release info
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (14 seconds elapsed).
+
+WARNING: This version of the tool is 709 days old.
+legacy_genus:/> source ./synthesis/adder.tcl
+Sourcing './synthesis/adder.tcl' (Thu Nov 11 23:32:11 IST 2021)...
+  Setting attribute of root '/': 'lib_search_path' = /afs/iitd.ac.in/service/tools/public/asiclib/umcoa/L65/libraries/UMC65LLSC/synopsys/ccs
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'hdl_search_path', object type: 'root'
+        : Attribute 'hdl_search_path' is going to be obsoleted, use the new attribute 'init_hdl_search_path'.
+  Setting attribute of root '/': 'hdl_search_path' = ./rtl/
+
+Threads Configured:3
+
+  Message Summary for Library uk65lscllmvbbr_100c25_tc_ccs.lib:
+  *************************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *************************************************************
+ 
+Warning : Ignoring unsupported lu_table_template. [LBR-403]
+        : Ignoring lu_table_template index type (input_voltage).
+        : LBR-403 is issued when an unsupported lu_table_template is encountered by GENUS.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.000000, 25.000000) in library 'uk65lscllmvbbr_100c25_tc_ccs.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTR' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE3R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE4R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE64R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE6R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILE8R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP16R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP32R' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FILEP32R' must have an output pin.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM12R'
+        : To make the cell usable, change the value of 'dont_use' attribute to false.
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM16R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM20R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM2R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM3R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM4R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM6R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCEPOM8R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM12R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM16R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM20R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM2R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM3R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM4R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM6R'
+Warning : Unusable clock gating integrated cell found at the time of loading libraries. This warning happens because a particular library cell is defined as 'clock_gating_integrated_cell', but 'dont_use' attribute is defined as true in the liberty library. To make Genus use this cell for clock gating insertion, 'dont_use' attribute should be set to false. [LBR-101]
+        : Clock gating integrated cell name: 'LAGCESOM8R'
+  Setting attribute of root '/': 'library' = uk65lscllmvbbr_100c25_tc_ccs.lib
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM12RA' is a sequential timing arc.
+        : The library cell will be treated as a timing-model. Make sure that the timing arcs and output function are defined correctly. Even if the cell intends to have dual-functionality, it cannot be unmapped or automatically inferred.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM16RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM24RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM2RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM32RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM40RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM48RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM4RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM6RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CKB_SE_H54' between pins 'CKB' and 'SE' in libcell 'LAGCECSM8RA' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM12R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM16R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM20R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM2R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM3R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM4R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM6R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEM8R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEPM12R' is a sequential timing arc.
+Warning : Detected both combinational and sequential timing arcs in a library cell. This might prevent the tool from using this cell for technology mapping. The tool will treat it as unusable. [LBR-76]
+        : The arc 'CK_E_Ha0' between pins 'CK' and 'E' in libcell 'LAGCEPM16R' is a sequential timing arc.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'Adder_16' from file './rtl/Adder_16.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'Adder_16' with default parameters value.
+Warning : Connected signal is wider than module port. [CDFG-464]
+        : Signal width (32) does not match width of input port 'Si' (1) of instance 'B32' of module 'base_logic' in file './rtl/Adder_16.v' on line 52.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'Adder_16'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+
+
+ 	 Check Design Report (c)
+	 ------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'Adder_16'
+
+No empty modules in design 'Adder_16'
+
+  Done Checking the design.
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[16] 
+        : Use the 'external_delay' command to specify and output delay on output ports or to specify an input delay on input ports. See the 'Specifying the Timing and Delay Constraints' Chapter in the 'Timing Analysis Guide' for detailed information.
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[15] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[14] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[13] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[12] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[11] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[10] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[9] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[8] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[7] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[6] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[5] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[4] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[3] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[2] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[1] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/S[0] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an input delay on the following output ports: 
+	/designs/Adder_16/ports_out/Cout 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[15] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[14] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[13] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[12] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[11] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[10] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[9] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[8] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[7] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[6] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[5] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[4] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[3] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[2] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[1] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/a[0] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[15] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[14] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[13] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[12] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[11] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[10] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[9] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[8] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[7] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[6] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[5] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[4] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[3] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[2] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[1] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/b[0] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[15] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[14] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[13] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[12] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[11] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[10] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[9] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[8] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[7] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[6] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[5] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[4] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[3] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[2] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[1] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/c[0] 
+Warning : At least one of the specified ports is not valid for the given external delay. [TUI-253]
+        :  Cannot specify an output delay on the following input ports: 
+	/designs/Adder_16/ports_in/Cin 
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "current_design"           - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_latency"        - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      1 , failed      0 (runtime  0.00)
+ "set_units"                - successful      2 , failed      0 (runtime  0.00)
+Total runtime 0.0
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : command: 'synthesize'
+        : The synthesize command is obsolete. Use the syn_gen, syn_map or syn_opt commands instead.
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'Adder_16' to generic gates using 'medium' effort.
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: Adder_16, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: Adder_16, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : No pre-processing optimizations applied to datapath logic in 'Adder_16'.
+Info    : Skipping datapath optimization. [DPOPT-5]
+        : There is no datapath logic in 'Adder_16'.
+Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: Adder_16, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux speculation [v1.0] (stage: post_muxopt, startdef: Adder_16, recur: true)
+Starting speculation optimization
+Completed speculation optimization (accepts:0)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 0.020s)
+==================================
+Stage : to_generic 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------
+|    Id    |  Sev   |Count |                   Message Text                    |
+--------------------------------------------------------------------------------
+| CDFG-464 |Warning |    1 |Connected signal is wider than module port.        |
+|          |        |      |This may cause simulation mismatches between the   |
+|          |        |      | original and synthesized designs.                 |
+| CDFG-818 |Warning |    1 |Using default parameter value for module           |
+|          |        |      | elaboration.                                      |
+| DPOPT-5  |Info    |    1 |Skipping datapath optimization.                    |
+| DPOPT-6  |Info    |    1 |Pre-processed datapath logic.                      |
+| ELAB-1   |Info    |    1 |Elaborating Design.                                |
+| ELAB-2   |Info    |    5 |Elaborating Subdesign.                             |
+| ELAB-3   |Info    |    1 |Done Elaborating Design.                           |
+| LBR-101  |Warning |   16 |Unusable clock gating integrated cell found at the |
+|          |        |      | time of loading libraries. This warning happens   |
+|          |        |      | because a particular library cell is defined as   |
+|          |        |      | 'clock_gating_integrated_cell', but 'dont_use'    |
+|          |        |      | attribute is defined as true in the liberty       |
+|          |        |      | library. To make Genus use this cell for clock    |
+|          |        |      | gating insertion, 'dont_use' attribute should be  |
+|          |        |      | set to false.                                     |
+|          |        |      |To make the cell usable, change the value of       |
+|          |        |      | 'dont_use' attribute to false.                    |
+| LBR-155  |Info    |  593 |Mismatch in unateness between 'timing_sense'       |
+|          |        |      | attribute and the function.                       |
+|          |        |      |The 'timing_sense' attribute will be respected.    |
+| LBR-161  |Info    |    1 |Setting the maximum print count of this message to |
+|          |        |      | 10 if information_level is less than 9.           |
+| LBR-162  |Info    |  291 |Both 'pos_unate' and 'neg_unate' timing_sense arcs |
+|          |        |      | have been processed.                              |
+|          |        |      |Setting the 'timing_sense' to non_unate.           |
+| LBR-40   |Info    |    1 |An unsupported construct was detected in this      |
+|          |        |      | library.                                          |
+|          |        |      |Check to see if this construct is really needed    |
+|          |        |      | for synthesis. Many liberty constructs are not    |
+|          |        |      | actually required.                                |
+| LBR-403  |Warning |    1 |Ignoring unsupported lu_table_template.            |
+|          |        |      |LBR-403 is issued when an unsupported              |
+|          |        |      | lu_table_template is encountered by GENUS.        |
+| LBR-41   |Info    |    1 |An output library pin lacks a function attribute.  |
+|          |        |      |If the remainder of this library cell's semantic   |
+|          |        |      | checks are successful, it will be considered as a |
+|          |        |      | timing-model                                      |
+|          |        |      | (because one of its outputs does not have a valid |
+|          |        |      | function.                                         |
+| LBR-412  |Info    |    1 |Created nominal operating condition.               |
+|          |        |      |The nominal operating condition is represented,    |
+|          |        |      | either by the nominal PVT values specified in the |
+|          |        |      | library source                                    |
+|          |        |      | (via nom_process,nom_voltage and nom_temperature  |
+|          |        |      | respectively)                                     |
+|          |        |      | , or by the default PVT values (1.0,1.0,1.0).     |
+| LBR-518  |Info    |    1 |Missing a function attribute in the output pin     |
+|          |        |      | definition.                                       |
+| LBR-76   |Warning |   52 |Detected both combinational and sequential timing  |
+|          |        |      | arcs in a library cell. This might prevent the    |
+|          |        |      | tool from using this cell for technology mapping. |
+|          |        |      | The tool will treat it as unusable.               |
+|          |        |      |The library cell will be treated as a              |
+|          |        |      | timing-model. Make sure that the timing arcs and  |
+|          |        |      | output function are defined correctly. Even if    |
+|          |        |      | the cell intends to have dual-functionality, it   |
+|          |        |      | cannot be unmapped or automatically inferred.     |
+| LBR-9    |Warning |   24 |Library cell has no output pins defined.           |
+|          |        |      |Add the missing output pin(s)                      |
+|          |        |      | , then reload the library. Else the library cell  |
+|          |        |      | will be marked as timing model i.e. unusable.     |
+|          |        |      | Timing_model means that the cell does not have    |
+|          |        |      | any defined function. If there is no output pin,  |
+|          |        |      | Genus will mark library cell as unusable i.e. the |
+|          |        |      | attribute 'usable' will be marked to 'false' on   |
+|          |        |      | the libcell. Therefore, the cell is not used for  |
+|          |        |      | mapping and it will not be picked up from the     |
+|          |        |      | library for synthesis. If you query the attribute |
+|          |        |      | 'unusable_reason' on the libcell; result will be: |
+|          |        |      | 'Library cell has no output pins.'Note: The       |
+|          |        |      | message LBR-9 is only for the logical pins and    |
+|          |        |      | not for the power_ground pins. Genus will depend  |
+|          |        |      | upon the output function defined in the pin group |
+|          |        |      | (output pin)                                      |
+|          |        |      | of the cell, to use it for mapping. The pg_pin    |
+|          |        |      | will not have any function defined.               |
+| SYNTH-1  |Info    |    1 |Synthesizing.                                      |
+| TIM-167  |Info    |    1 |An external clock is being defined.                |
+|          |        |      |An external clock does not directly drive any      |
+|          |        |      | points within the design, but is only used as a   |
+|          |        |      | reference for external delays.                    |
+| TUI-253  |Warning |   67 |At least one of the specified ports is not valid   |
+|          |        |      | for the given external delay.                     |
+|          |        |      |Use the 'external_delay' command to specify and    |
+|          |        |      | output delay on output ports or to specify an     |
+|          |        |      | input delay on input ports. See the 'Specifying   |
+|          |        |      | the Timing and Delay Constraints' Chapter in the  |
+|          |        |      | 'Timing Analysis Guide' for detailed information. |
+| TUI-31   |Warning |    2 |Obsolete command.                                  |
+|          |        |      |This command is no longer supported.               |
+| TUI-32   |Warning |    1 |This attribute will be obsolete in a next major    |
+|          |        |      | release.                                          |
+| TUI-37   |Warning |    1 |This command will be obsolete in a next major      |
+|          |        |      | release.                                          |
+|          |        |      |The synthesize command is obsolete. Use the        |
+|          |        |      | syn_gen, syn_map or syn_opt commands instead.     |
+--------------------------------------------------------------------------------
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'Adder_16' to generic gates.
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'Adder_16' using 'medium' effort.
+Mapper: Libraries have:
+	domain _default_: 600 combo usable cells and 338 sequential usable cells
+Multi-threaded constant propagation [1|0] ...
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 19 hierarchical instances.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
+Multi-threaded Virtual Mapping    (8 threads, 8 of 16 CPUs usable)
+==================================
+Stage : first_condense 
+==================================
+  =================
+   Message Summary
+  =================
+--------------------------------------------------------------------------------
+|   Id    |Sev  |Count |                     Message Text                      |
+--------------------------------------------------------------------------------
+| GLO-34  |Info |    1 |Deleting instances not driving any primary outputs.    |
+|         |     |      |Optimizations such as constant propagation or          |
+|         |     |      | redundancy removal could change the connections so a  |
+|         |     |      | hierarchical instance does not drive any primary      |
+|         |     |      | outputs anymore. To see the list of deleted           |
+|         |     |      | hierarchical instances, set the 'information_level'   |
+|         |     |      | attribute to 2 or above. If the message is truncated  |
+|         |     |      | set the message attribute 'truncate' to false to see  |
+|         |     |      | the complete list. To prevent this optimization, set  |
+|         |     |      | the 'delete_unloaded_insts' root/subdesign attribute  |
+|         |     |      | to 'false' or 'preserve' instance attribute to        |
+|         |     |      | 'true'.                                               |
+| SYNTH-2 |Info |    1 |Done synthesizing.                                     |
+| SYNTH-4 |Info |    1 |Mapping.                                               |
+--------------------------------------------------------------------------------
+ 
+Global mapping target info
+==========================
+Cost Group 'virtual_clk' target slack:   240 ps
+Target path end-point (Port: Adder_16/S[7])
+
+Multi-threaded Technology Mapping (8 threads, 8 of 16 CPUs usable)
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_map                  390        0 
+
+     Cost Group            Target    Slack    Diff.  Constr.
+------------------------------------------------------------
+    virtual_clk               240     7145             10000 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'virtual_clk' target slack:   160 ps
+Target path end-point (Port: Adder_16/S[7])
+
+==================================
+Stage : global_incr_map 
+==================================
+  =================
+   Message Summary
+  =================
+---------------------------------------------------------------------
+|  Id  |Sev  |Count |                 Message Text                  |
+---------------------------------------------------------------------
+| PA-7 |Info |   96 |Resetting power analysis results.              |
+|      |     |      |All computed switching activities are removed. |
+---------------------------------------------------------------------
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+ global_incr                 390        0 
+
+     Cost Group            Target    Slack    Diff.  Constr.
+------------------------------------------------------------
+    virtual_clk               160     7145             10000 
+
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'Adder_16'.
+Info    : Incrementally optimizing. [SYNTH-7]
+        : Incrementally optimizing 'Adder_16' using 'medium' effort.
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_iopt                   390        0         0         0        0
+-------------------------------------------------------------------------------
+ const_prop                  390        0         0         0        0
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_delay                  390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_drc                    390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      drc_buf_sp         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_tns                    390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+
+ init_area                   390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         0  (        0 /        0 )  0.00
+         rem_buf         0  (        0 /        0 )  0.00
+         rem_inv         0  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+        io_phase         0  (        0 /        0 )  0.00
+       gate_comp         0  (        0 /        0 )  0.00
+       gcomp_mog         0  (        0 /        0 )  0.00
+       glob_area         8  (        0 /        8 )  0.00
+       area_down         0  (        0 /        0 )  0.00
+      size_n_buf         0  (        0 /        0 )  0.00
+  gate_deco_area         0  (        0 /        0 )  0.00
+         rem_buf         0  (        0 /        0 )  0.00
+         rem_inv         0  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+
+ 
+Incremental optimization status
+===============================
+                                   Group   
+                                  Tot Wrst     Total - - DRC Totals - -
+                           Total  Weighted      Neg      Max       Max 
+Operation                   Area   Slacks      Slack    Trans      Cap 
+ init_delay                  390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+       crit_upsz         0  (        0 /        0 )  0.00
+    plc_bal_star         0  (        0 /        0 )  0.00
+     drc_buftimb         0  (        0 /        0 )  0.00
+          plc_st         0  (        0 /        0 )  0.00
+    plc_st_fence         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+      plc_laf_st         0  (        0 /        0 )  0.00
+ plc_laf_st_fence         0  (        0 /        0 )  0.00
+     drc_buftims         0  (        0 /        0 )  0.00
+   plc_laf_lo_st         0  (        0 /        0 )  0.00
+       plc_lo_st         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+            fopt         0  (        0 /        0 )  0.00
+        setup_dn         0  (        0 /        0 )  0.00
+         buf2inv         0  (        0 /        0 )  0.00
+        mb_split         0  (        0 /        0 )  0.00
+             exp         0  (        0 /        0 )  0.00
+       gate_deco         0  (        0 /        0 )  0.00
+       gcomp_tim         0  (        0 /        0 )  0.00
+  inv_pair_2_buf         0  (        0 /        0 )  0.00
+
+ init_drc                    390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+      simple_buf         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+          plc_st         0  (        0 /        0 )  0.00
+        plc_star         0  (        0 /        0 )  0.00
+        drc_bufs         0  (        0 /        0 )  0.00
+        drc_fopt         0  (        0 /        0 )  0.00
+        drc_bufb         0  (        0 /        0 )  0.00
+             dup         0  (        0 /        0 )  0.00
+       crit_dnsz         0  (        0 /        0 )  0.00
+       crit_upsz         0  (        0 /        0 )  0.00
+
+ init_area                   390        0         0         0        0
+
+           Trick     Calls     Accepts   Attempts    Time(secs) 
+-----------------------------------------------------------
+           undup         0  (        0 /        0 )  0.00
+         rem_buf         0  (        0 /        0 )  0.00
+         rem_inv         0  (        0 /        0 )  0.00
+        merge_bi         0  (        0 /        0 )  0.00
+      rem_inv_qb         0  (        0 /        0 )  0.00
+        io_phase         0  (        0 /        0 )  0.00
+       gate_comp         0  (        0 /        0 )  0.00
+       gcomp_mog         0  (        0 /        0 )  0.00
+       glob_area         8  (        0 /        8 )  0.00
+       area_down         0  (        0 /        0 )  0.00
+      size_n_buf         0  (        0 /        0 )  0.00
+  gate_deco_area         0  (        0 /        0 )  0.00
+
+==================================
+Stage : incr_opt 
+==================================
+  =================
+   Message Summary
+  =================
+------------------------------------------------------------------------
+|   Id    |Sev  |Count |                 Message Text                  |
+------------------------------------------------------------------------
+| PA-7    |Info |    2 |Resetting power analysis results.              |
+|         |     |      |All computed switching activities are removed. |
+| SYNTH-5 |Info |    1 |Done mapping.                                  |
+| SYNTH-7 |Info |    1 |Incrementally optimizing.                      |
+------------------------------------------------------------------------
+Info    : Done incrementally optimizing. [SYNTH-8]
+        : Done incrementally optimizing 'Adder_16'.
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+legacy_genus:/> gui_show
+legacy_genus:/> report_area
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 19.12-s121_1
+  Generated on:           Nov 11 2021  11:34:39 pm
+  Module:                 Adder_16
+  Technology library:     uk65lscllmvbbr_100c25_tc 
+  Operating conditions:   uk65lscllmvbbr_100c25_tc (balanced_tree)
+  Wireload mode:          top
+  Area mode:              timing library
+============================================================
+
+Instance     Module     Cell Count  Cell Area  Net Area   Total Area  Wireload     
+-----------------------------------------------------------------------------------
+Adder_16                        98    390.240     0.000      390.240       wl0 (D) 
+  F15    FA_15                   1      7.560     0.000        7.560       wl0 (T) 
+  F14    FA_14                   1      7.560     0.000        7.560       wl0 (T) 
+  F13    FA_13                   1      7.560     0.000        7.560       wl0 (T) 
+  F12    FA_12                   1      7.560     0.000        7.560       wl0 (T) 
+  F11    FA_11                   1      7.560     0.000        7.560       wl0 (T) 
+  F10    FA_10                   1      7.560     0.000        7.560       wl0 (T) 
+  F9     FA_9                    1      7.560     0.000        7.560       wl0 (T) 
+  F8     FA_8                    1      7.560     0.000        7.560       wl0 (T) 
+  F7     FA_7                    1      7.560     0.000        7.560       wl0 (T) 
+  F6     FA_6                    1      7.560     0.000        7.560       wl0 (T) 
+  F5     FA_5                    1      7.560     0.000        7.560       wl0 (T) 
+  F4     FA_4                    1      7.560     0.000        7.560       wl0 (T) 
+  F3     FA_3                    1      7.560     0.000        7.560       wl0 (T) 
+  F2     FA_2                    1      7.560     0.000        7.560       wl0 (T) 
+  F1     FA_1                    1      7.560     0.000        7.560       wl0 (T) 
+  F0     FA                      1      7.560     0.000        7.560       wl0 (T) 
+  B15    base_logic_15           1      5.760     0.000        5.760       wl0 (T) 
+  B14    base_logic_14           1      5.760     0.000        5.760       wl0 (T) 
+  B13    base_logic_13           1      5.760     0.000        5.760       wl0 (T) 
+  B12    base_logic_12           1      5.760     0.000        5.760       wl0 (T) 
+  B11    base_logic_11           1      5.760     0.000        5.760       wl0 (T) 
+  B10    base_logic_10           1      5.760     0.000        5.760       wl0 (T) 
+  B9     base_logic_9            1      5.760     0.000        5.760       wl0 (T) 
+  B8     base_logic_8            1      5.760     0.000        5.760       wl0 (T) 
+  B7     base_logic_7            1      5.760     0.000        5.760       wl0 (T) 
+  B6     base_logic_6            1      5.760     0.000        5.760       wl0 (T) 
+  B5     base_logic_5            1      5.760     0.000        5.760       wl0 (T) 
+  B4     base_logic_4            1      5.760     0.000        5.760       wl0 (T) 
+  B3     base_logic_3            1      5.760     0.000        5.760       wl0 (T) 
+  B2     base_logic_2            1      5.760     0.000        5.760       wl0 (T) 
+  B1     base_logic_1            1      5.760     0.000        5.760       wl0 (T) 
+  B0     base_logic              1      5.760     0.000        5.760       wl0 (T) 
+  BL153  black_cell_16           2      4.680     0.000        4.680       wl0 (T) 
+  BL152  black_cell_15           2      4.680     0.000        4.680       wl0 (T) 
+  BL151  black_cell_14           2      4.680     0.000        4.680       wl0 (T) 
+  BL133  black_cell_13           2      4.680     0.000        4.680       wl0 (T) 
+  BL132  black_cell_12           2      4.680     0.000        4.680       wl0 (T) 
+  BL131  black_cell_11           2      4.680     0.000        4.680       wl0 (T) 
+  BL113  black_cell_10           2      4.680     0.000        4.680       wl0 (T) 
+  BL112  black_cell_9            2      4.680     0.000        4.680       wl0 (T) 
+  BL111  black_cell_8            2      4.680     0.000        4.680       wl0 (T) 
+  BL93   black_cell_7            2      4.680     0.000        4.680       wl0 (T) 
+  BL92   black_cell_6            2      4.680     0.000        4.680       wl0 (T) 
+  BL91   black_cell_5            2      4.680     0.000        4.680       wl0 (T) 
+  BL72   black_cell_4            2      4.680     0.000        4.680       wl0 (T) 
+  BL71   black_cell_3            2      4.680     0.000        4.680       wl0 (T) 
+  BL52   black_cell_2            2      4.680     0.000        4.680       wl0 (T) 
+  BL51   black_cell_1            2      4.680     0.000        4.680       wl0 (T) 
+  BL3    black_cell              2      4.680     0.000        4.680       wl0 (T) 
+  GR15   grey_cell_14            1      2.520     0.000        2.520       wl0 (T) 
+  GR14   grey_cell_13            1      2.520     0.000        2.520       wl0 (T) 
+  GR13   grey_cell_12            1      2.520     0.000        2.520       wl0 (T) 
+  GR12   grey_cell_11            1      2.520     0.000        2.520       wl0 (T) 
+  GR11   grey_cell_10            1      2.520     0.000        2.520       wl0 (T) 
+  GR10   grey_cell_9             1      2.520     0.000        2.520       wl0 (T) 
+  GR9    grey_cell_8             1      2.520     0.000        2.520       wl0 (T) 
+  GR8    grey_cell_7             1      2.520     0.000        2.520       wl0 (T) 
+  GR7    grey_cell_6             1      2.520     0.000        2.520       wl0 (T) 
+  GR6    grey_cell_5             1      2.520     0.000        2.520       wl0 (T) 
+  GR5    grey_cell_4             1      2.520     0.000        2.520       wl0 (T) 
+  GR4    grey_cell_3             1      2.520     0.000        2.520       wl0 (T) 
+  GR3    grey_cell_2             1      2.520     0.000        2.520       wl0 (T) 
+  GR2    grey_cell_1             1      2.520     0.000        2.520       wl0 (T) 
+  GR1    grey_cell               1      2.520     0.000        2.520       wl0 (T) 
+  GR16   grey_cell_15            1      2.160     0.000        2.160       wl0 (T) 
+
+ (T) = wireload mode is 'top'
+ (D) = wireload is default in technology library
+legacy_genus:/> report_power
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
+       : Adder_16
+Info   : ACTP-0009 [ACTPInfo] Activity Propagation Progress Report :   0%   1%   2%   3%   4%   5%   6%   7%   8%   9%  10%  11%  12%  13%  14%  15%  16%  17%  18%  19%  20%  21%  22%  23%  24%  25%  26%  27%  28%  29%  30%  31%  32%  33%  34%  35%  36%  37%  38%  39%  40%  41%  42%  43%  44%  45%  46%  47%  48%  49%  50%  51%  52%  53%  54%  55%  56%  57%  58%  59%  60%  61%  62%  63%  64%  65%  66%  67%  68%  69%  70%  71%  72%  73%  74%  75%  76%  77%  78%  79%  80%  81%  82%  83%  84%  85%  86%  87%  88%  89%  90%  91%  92%  93%  94%  95%  96%  97%  98%  99% 100%
+Info   : ACTP-0001 Activity propagation ended for stim#0
+Info   : PWRA-0001 [PwrInfo] compute_power effective options 
+       : -mode : vectorless
+       : -skip_propagation : 1
+       : -frequency_scaling_factor : 1.0
+       : -use_clock_freq : stim
+       : -compat : voltus
+       : -stim :/stim#0
+       : -fromGenus : 1
+Info   : ACTP-0001 Timing initialization started
+Info   : ACTP-0001 Timing initialization ended
+Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
+       : option....
+Warning: PWRA-0302 [PwrWarn] Frequency scaling is not applicable for vectorless
+       : flow. Ignoring frequency scaling.
+Info   : PWRA-0002 Voltus compat mode is set for power analysis.
+Warning: PWRA-0304 [PwrWarn] -stim option is not applicable with vectorless mode
+       : of power analysis, ignored this option.
+Info   : PWRA-0002 Started 'vectorless' power computation.
+Info   : PWRA-0002 Finished power computation.
+Info   : PWRA-0007 [PwrInfo] Completed successfully.
+       : Info=9, Warn=2, Error=0, Fatal=0
+Instance: /Adder_16
+Power Unit: W
+PDB Frames: /stim#0/frame#0
+  -------------------------------------------------------------------------
+    Category         Leakage     Internal    Switching        Total    Row%
+  -------------------------------------------------------------------------
+      memory     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+    register     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+       latch     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+       logic     2.01473e-08  1.08289e-05  6.62270e-06  1.74717e-05 100.00%
+        bbox     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+       clock     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+         pad     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+          pm     0.00000e+00  0.00000e+00  0.00000e+00  0.00000e+00   0.00%
+  -------------------------------------------------------------------------
+    Subtotal     2.01473e-08  1.08289e-05  6.62270e-06  1.74717e-05 100.00%
+  Percentage           0.12%       61.98%       37.91%      100.00% 100.00%
+  -------------------------------------------------------------------------
+legacy_genus:/> report_timing
+Warning : Timing problems have been detected in this design. [TIM-11]
+        : The design is 'Adder_16'.
+        : Use 'check_timing_intent' or 'report timing -lint' to report more information.
+============================================================
+  Generated by:           Genus(TM) Synthesis Solution 19.12-s121_1
+  Generated on:           Nov 11 2021  11:36:14 pm
+  Module:                 Adder_16
+  Technology library:     uk65lscllmvbbr_100c25_tc 
+  Operating conditions:   uk65lscllmvbbr_100c25_tc (balanced_tree)
+  Wireload mode:          top
+  Area mode:              timing library
+============================================================
+
+          Pin                     Type       Fanout Load Slew Delay Arrival   
+                                                    (fF) (ps)  (ps)   (ps)    
+------------------------------------------------------------------------------
+(clock virtual_clk)            launch                                     0 R 
+                               latency                         +150     150 R 
+(adder.sdc_line_11_22_1)       ext delay                      +1000    1150 F 
+b[9]                           in port            1  4.1    0    +0    1150 F 
+F9/bi 
+  g64/A                                                          +0    1150   
+  g64/S                        ADFM2RA            1  3.5   62  +181    1331 R 
+F9/Si 
+B9/Si 
+  g20/B                                                          +0    1331   
+  g20/S                        ADHM1RA            3  3.7   63  +101    1432 F 
+B9/Pi 
+BL91/Pik 
+  g21/A1                                                         +0    1432   
+  g21/Z                        AO21M2RA           2  2.7   37   +94    1526 F 
+BL91/Gij 
+BL92/Gik 
+  g21/B                                                          +0    1526   
+  g21/Z                        AO21M2RA           2  2.8   38  +109    1636 F 
+BL92/Gij 
+BL93/Gik 
+  g21/B                                                          +0    1636   
+  g21/Z                        AO21M2RA           1  1.5   30  +103    1738 F 
+BL93/Gij 
+GR9/Gik 
+  g14/B                                                          +0    1738   
+  g14/Z                        AO21M2RA           2  3.1   40  +108    1846 F 
+GR9/Gij 
+GR10/Gk_1j 
+  g14/A1                                                         +0    1846   
+  g14/Z                        AO21M2RA           1  1.8   32   +81    1928 F 
+GR10/Gij 
+g35/A                                                            +0    1928   
+g35/Z                          XOR2M2RA           1  0.2   24   +77    2005 R 
+S[11]                     <<<  interconnect                24    +0    2005 R 
+                               out port                          +0    2005 R 
+(adder.sdc_line_12_120_1)      ext delay                      +1000    3005 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock virtual_clk)            capture                                10000 R 
+                               latency                         +150   10150 R 
+------------------------------------------------------------------------------
+Cost Group   : 'virtual_clk' (path_group 'virtual_clk')
+Timing slack :    7145ps 
+Start-point  : b[9]
+End-point    : S[11]
+
+legacy_genus:/> exit
+Normal exit.
